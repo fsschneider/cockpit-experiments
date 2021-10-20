@@ -9,11 +9,15 @@
   </p>
 </p>
 
----
+<p align="center">
+  <a href="https://github.com/f-dangel/cockpit">Cockpit Package</a> •
+  <a href="https://cockpit.readthedocs.io/">Docs</a> •
+  <a href="LICENSE.txt">License</a>
+</p>
 
 ## Experiments
 
-To showcase the capabilities of Cockpit we performed several experiments illustrating the usefulness of our debugging tool in [our paper](https://arxiv.org/abs/2102.06604). The code for all experiments, as well as the generated data is presented in this repository. For a discussion of those experiments please refer to our paper.
+To showcase the capabilities of [Cockpit](https://github.com/f-dangel/cockpit) we performed several experiments illustrating the usefulness of our debugging tool in [our paper](https://arxiv.org/abs/2102.06604). The code for all experiments, as well as the generated data is presented in this repository. For a discussion of those experiments please refer to our paper.
 
 We provide an overivew of all experiments here, splitting them up in experiments that are presented in the main body of our paper and ones that are shown in the appendix.
 
