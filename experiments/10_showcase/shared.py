@@ -3,11 +3,10 @@ import glob
 import math
 import os
 
-from PIL import Image
-from torch.optim import SGD
-
 import cockpit.utils.schedules as schedules
 from cockpit import CockpitPlotter
+from PIL import Image
+from torch.optim import SGD
 
 HERE = os.path.abspath(__file__)
 HEREDIR = os.path.dirname(HERE)

@@ -6,7 +6,6 @@ import time
 
 import numpy
 import torch
-
 from cockpit.quantities.utils_hists import histogram2d, histogramdd
 
 HERE = os.path.abspath(__file__)

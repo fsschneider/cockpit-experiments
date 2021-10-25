@@ -7,10 +7,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+from cockpit import CockpitPlotter
 from matplotlib.ticker import MaxNLocator
 from scipy import stats
-
-from cockpit import CockpitPlotter
 
 sys.path.append(os.getcwd())
 from experiments.utils.plotting import _get_plot_size, _set_plotting_params  # noqa

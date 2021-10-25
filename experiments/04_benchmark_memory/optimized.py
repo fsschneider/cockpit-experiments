@@ -1,9 +1,8 @@
 import glob
 import os
 
-from shared import DIR, parse, report_memory, run, set_up, skip_if_exists
-
 from cockpit.quantities import GradHist1d
+from shared import DIR, parse, report_memory, run, set_up, skip_if_exists
 
 
 def get_out_files(testproblem):

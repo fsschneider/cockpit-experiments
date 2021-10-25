@@ -4,6 +4,7 @@ import os
 import sys
 from functools import partial
 
+from cockpit.utils.configuration import quantities_cls_for_configuration
 from shared import (
     animate,
     cosine_decay_restarts_schedule,
@@ -13,8 +14,6 @@ from shared import (
     plot_to_tex_dir,
     track_schedule,
 )
-
-from cockpit.utils.configuration import quantities_cls_for_configuration
 
 sys.path.append(os.getcwd())
 from experiments.utils.deepobs_runner import DeepOBSRunner, fix_deepobs_data_dir  # noqa

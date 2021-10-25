@@ -29,14 +29,15 @@ All experiments include some `run.py` file to reproduce the results. Our origina
 
 | Experiment                 | Description                                                                                                       |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| 01_benchmark               | Benchmark the run time of individual instruments and configurations of Cockpit.<br>Reproduces Figure 6 and 11-15. |
+| 01_benchmark               | Benchmark the run time of individual instruments and configurations of Cockpit.<br>Reproduces Figure 6 and 13-17. |
 | 02_LINE                    | Illustrative Example of why just monitoring the loss is not enough.<br>Reproduces Figure 1.                       |
-| 04_benchmark_memory        | Benchmark the memory consumption of the histograms.<br>Reproduces Figure 10                                       |
-| 06_preprocessing           | Study how incorrectly scaled data is represented in Cockpit.<br>Reproduces Figure 3.                              |
+| 03_scalar_deep             | Concrete example why just monitoring the loss is not enough.<br>Reproduces Figure 11.                             |
+| 04_benchmark_memory        | Benchmark the memory consumption of the histograms.<br>Reproduces Figure 12.                                      |
+| 06_preprocessing           | Study how incorrectly scaled data is represented in Cockpit.<br>Reproduces Figure 3 and 10.                       |
 | 07_learning_rate_selection | Grid search the learning rate and compare the alpha values vs. final performance.<br>Reproduces Figure 5.         |
 | 09_layerwise               | Analyzing the layerwise histogram for two different architectures.<br>Reproduces Figure 4.                        |
-| 10_showcase                | Showcase of the full Cockpit for DeepOBS problems.<br>Reproduces Figure 2 and 17.                                 |
-| 11_histogram2d             | Benchmark the performance of different implementations for computing the 2D Histogram.<br>Reproduces Figure 16.   |
+| 10_showcase                | Showcase of the full Cockpit for DeepOBS problems.<br>Reproduces Figure 2 and 19.                                 |
+| 11_histogram2d             | Benchmark the performance of different implementations for computing the 2D Histogram.<br>Reproduces Figure 18.   |
 | 12_alpha_explanation       | Illustrative plot explaining the Alpha Quantity.<br>Reproduces Figure 8.                                          |
 
 ## Main Text Experiments
@@ -55,7 +56,7 @@ All experiments include some `run.py` file to reproduce the results. Our origina
 
 #### Figure 4: Layerwise Histogram - [`09_layerwise`](experiments/09_layerwise/README.md)
 
-![Layerwise Histogram]experiments/09_layerwise/output/exp09.png)
+![Layerwise Histogram](experiments/09_layerwise/output/exp09.png)
 
 #### Figure 5: Tuning the Learning Rate with Alpha - [`07_learning_rate_selection`](experiments/07_learning_rate_selection/README.md)
 
@@ -70,23 +71,29 @@ All experiments include some `run.py` file to reproduce the results. Our origina
 Figure 7 is not included in this list, as it is a code example. The code is an adapted
 version of the [basic](https://github.com/f-dangel/cockpit/blob/main/examples/01_basic_fmnist.py) and [advanced](https://github.com/f-dangel/cockpit/blob/main/examples/02_advanced_fmnist.py) examples from the examples directory and the [documentation](https://cockpit.readthedocs.io/en/latest/examples/01_basic_fmnist.html).
 
-Figure 9 is a conceptual sketch of the gradient tests without any empirical results.
-
 #### Figure 8: Motivational Sketch for Alpha - [`12_alpha_explanation`](experiments/12_alpha_explanation/README.md)
 
 ![Alpha Explanation](experiments/12_alpha_explanation/output/alpha_explanation.png)
 
-#### Figure 10: Memory Consumption Histogram - [`04_benchmark_memory`](experiments/04_benchmark_memory/README.md)
+#### Figure 10: Misscaled Data ImageNet - [`06_preprocessing`](experiments/06_preprocessing/README.md)
+
+![Misscaled Data](experiments/06_preprocessing/output/fig10.png)
+
+#### Figure 11: Regularization Detection - [`03_scalar_deep`](experiments/03_scalar_deep/README.md)
+
+![Regularization Detection](experiments/03_scalar_deep/output/fig11.png)
+
+#### Figure 12: Memory Consumption Histogram - [`04_benchmark_memory`](experiments/04_benchmark_memory/README.md)
 
 ![Memory Benchmarks](experiments/04_benchmark_memory/output/exp04.png)
 
-#### Figure 11 - 15: Additional Run Time Benchmarks - [`01_benchmark`](experiments/01_benchmark/README.md)
+#### Figure 13 - 17: Additional Run Time Benchmarks - [`01_benchmark`](experiments/01_benchmark/README.md)
 
-#### Figure 16: Implementation Performance 2D Histogram - [`11_histogram2d`](experiments/11_histogram2d/README.md)
+#### Figure 18: Implementation Performance 2D Histogram - [`11_histogram2d`](experiments/11_histogram2d/README.md)
 
 ![Performance Histogram](experiments/11_histogram2d/output/exp11.png)
 
-#### Figure 17: Additional Showcases - [`10_showcase`](experiments/10_showcase/README.md)
+#### Figure 19: Additional Showcases - [`10_showcase`](experiments/10_showcase/README.md)
 
 ![Showcase MNIST LogReg](experiments/10_showcase/output/mnist_logreg_log.png)
 ![Showcase Quadratic Deep](experiments/10_showcase/output/quadratic_deep_log.png)

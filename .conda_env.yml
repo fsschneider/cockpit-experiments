@@ -1,0 +1,13 @@
+name: cockpit-experiments
+dependencies:
+  - pip
+  - python
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - conda-forge::palettable
+  - conda-forge::matplotlib=3.4.3
+  - pip:
+    - cockpit-for-pytorch
+    - memory-profiler
+    - git+git://github.com/fsschneider/DeepOBS.git@52bed6bd235b98dcefed0af92a8f09aaab6278a6#egg=deepobs
+    - git+git://github.com/f-dangel/backobs.git@0e8803ada481da7ba12ae7f2106c52a6ffa3b2f9#egg=backobs

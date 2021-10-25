@@ -4,9 +4,8 @@ import os
 import sys
 
 import matplotlib.pyplot as plt
-from torch.optim import SGD
-
 from cockpit import quantities
+from torch.optim import SGD
 
 sys.path.append(os.getcwd())
 from experiments.utils.deepobs_runner import DeepOBSRunner, fix_deepobs_data_dir  # noqa

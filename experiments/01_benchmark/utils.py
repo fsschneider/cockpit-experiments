@@ -5,6 +5,8 @@ import subprocess
 import sys
 from functools import lru_cache
 
+from cockpit.quantities import Time
+from cockpit.utils.configuration import quantities_cls_for_configuration
 from deepobs.pytorch.testproblems import (
     cifar10_3c3d,
     cifar100_3c3d,
@@ -20,9 +22,6 @@ from pytest_benchmark.plugin import (
     get_commit_info,
     pytest_benchmark_generate_machine_info,
 )
-
-from cockpit.quantities import Time
-from cockpit.utils.configuration import quantities_cls_for_configuration
 
 sys.path.append(os.getcwd())
 from experiments.utils.custom_imagenet_resnet import dummyimagenet_resnet50nobn  # noqa

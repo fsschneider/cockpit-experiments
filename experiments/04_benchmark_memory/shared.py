@@ -5,10 +5,9 @@ import sys
 import warnings
 
 import pandas
+from cockpit import Cockpit
 from memory_profiler import memory_usage
 from torch.optim import SGD
-
-from cockpit import Cockpit
 
 sys.path.append(os.getcwd())
 from experiments.utils.deepobs_runner import _DeepOBSRunner  # noqa

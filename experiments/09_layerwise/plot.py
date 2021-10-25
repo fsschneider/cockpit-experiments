@@ -7,10 +7,9 @@ import sys
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
-from run import PROBLEMS
-
 from cockpit import CockpitPlotter, instruments
 from cockpit.instruments.histogram_2d_gauge import _get_xmargin_histogram_data
+from run import PROBLEMS
 
 sys.path.append(os.getcwd())
 from experiments.utils.plotting import TikzExport  # noqa

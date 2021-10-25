@@ -7,9 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from deepobs.config import DATA_SET_NAMING, TP_NAMING
-
 from cockpit import CockpitPlotter
+from deepobs.config import DATA_SET_NAMING, TP_NAMING
 
 sys.path.append(os.getcwd())
 from experiments.utils.plotting import _get_plot_size, _set_plotting_params  # noqa

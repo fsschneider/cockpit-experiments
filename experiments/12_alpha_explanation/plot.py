@@ -6,7 +6,6 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-
 from cockpit.quantities.alpha import _fit_quadratic
 
 sys.path.append(os.getcwd())

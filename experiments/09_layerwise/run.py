@@ -3,9 +3,8 @@
 import os
 import sys
 
-from torch.optim import SGD
-
 from cockpit import quantities
+from torch.optim import SGD
 
 sys.path.append(os.getcwd())
 from experiments.utils.custom_cifar10_3c3d import (  # noqa
@@ -13,11 +12,8 @@ from experiments.utils.custom_cifar10_3c3d import (  # noqa
     make_cifar10transform_3c3d,
     make_cifar10transform_3c3dsig,
 )
-from experiments.utils.deepobs_runner import (  # noqa
-    DeepOBSRunner,
-    fix_deepobs_data_dir,
-    register,
-)
+from experiments.utils.deepobs_runner import DeepOBSRunner  # noqa
+from experiments.utils.deepobs_runner import fix_deepobs_data_dir, register  # noqa
 
 register(cifar10_3c3dsig)
 

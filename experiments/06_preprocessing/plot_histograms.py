@@ -5,9 +5,9 @@ import sys
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import run_histograms
+import run_histograms_cifar10
+import run_histograms_imagenet
 import seaborn as sns
-
 from cockpit import CockpitPlotter
 from cockpit.instruments.histogram_2d_gauge import _get_xmargin_histogram_data
 
@@ -45,7 +45,7 @@ def get_out_file(tproblem, suffix=".tex"):
 
 def plot_net_paper(problem, color, global_step=0):
     """Create TikZ plots for the paper."""
-    filepath = run_histograms.get_out_file(problem)
+    filepath = run_histograms_cifar10.get_out_file(problem)
     filepath = os.path.splitext(filepath)[0]
     cp = get_cockpit_plotter(filepath, global_step=global_step)
 
@@ -83,5 +83,8 @@ def plot_histogram(start_points, vals, bin_size, color):
 if __name__ == "__main__":
     COLORS = sns.color_palette("tab10")[:2]
 
-    for problem, color in zip(run_histograms.PROBLEMS, COLORS):
+    for problem, color in zip(run_histograms_cifar10.PROBLEMS, COLORS):
+        plot_net_paper(problem, color)
+
+    for problem, color in zip(run_histograms_imagenet.PROBLEMS, COLORS):
         plot_net_paper(problem, color)

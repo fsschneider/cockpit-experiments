@@ -6,14 +6,13 @@ import warnings
 from collections import defaultdict
 
 import pandas
-from deepobs.pytorch.config import set_default_device
-from torch.optim import SGD
-from utils import get_train_size
-
 from cockpit import Cockpit
 from cockpit.plotter import CockpitPlotter
 from cockpit.quantities import GradHist2d, Time
 from cockpit.quantities.bin_adaptation import GradAbsMax, ParamAbsMax
+from deepobs.pytorch.config import set_default_device
+from torch.optim import SGD
+from utils import get_train_size
 
 sys.path.append(os.getcwd())
 from experiments.utils.deepobs_runner import _DeepOBSRunner  # noqa

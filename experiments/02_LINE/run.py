@@ -3,10 +3,9 @@
 import os
 import sys
 
-from torch.optim import SGD
-
 import cockpit.utils.schedules as schedules
 from cockpit import quantities
+from torch.optim import SGD
 
 sys.path.append(os.getcwd())
 from experiments.utils.deepobs_runner import DeepOBSRunner  # noqa
